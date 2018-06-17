@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sagar.swoopnasuman.Facts">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/player"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    <TextView
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Early Life And Family Background:"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:id="@+id/head"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/adView"
+        />
+    <TextView
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="7dp"
+        android:text="At the very young age, he found himself very keen on music and started to explore and learn about music. He belongs to middle-class Nepali family where a variety of songs listened.He started singing when he was in grade 4.While his friends were enjoying the life of a teenager, at 17, Swoopna Suman’s life was completely different. One day suddenly he started shivering, he was scared, threw his books and banged the desk. All these continued until the reflection in his loved one’s eyes showed him a completely different world.
+Talking about his family and teenage life, he recently shared his struggle journey in The Storytellers a show where celebrities and well-known people shared their past to present journey of life.He recalls those moments when he worked in restaurants as a waiter to financially support his family. In some point, “Jumping from college roof” to get rid of all problems strike his mind, but he managed to convince himself. "
+        android:layout_below="@+id/head"
+        android:id="@+id/desc"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/head2"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="6dp"
+        android:text="Music Career:"
+        android:layout_below="@+id/desc"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:lineSpacingExtra="7dp"
+        android:text="He went to India’s part of a play but ended up singing bhajans on stage. That was an enriching experience.He thought that music is not for him at some point but slowly his ultimate passion did not stop him from leaning and doing. Internet was the best place to learn and watch his favorite artists. He uploaded his first cover song of Rohit John Chhetri’s super hit song ‘Bistarai Bistarai’ on YouTube in August 2014."
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head2"/>
+    </RelativeLayout>
+</ScrollView>
